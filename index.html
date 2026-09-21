@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PRAXIS | Business Advisory & Consulting</title>
+
+    <meta name="description"
+          content="PRAXIS Business Advisory & Consulting - Knowledge. Strategy. Growth. Business strategy, entrepreneurship, HR advisory, research and management development.">
+
+    <meta name="author" content="Sashi Kiran Koppolu">
+
+    <style>
+
+        /* ================================
+           GENERAL
+        ================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1d2939;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-label {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            color: #8b6b3f;
+        }
+
+        .section-title {
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #172033;
+        }
+
+        .section-text {
+            max-width: 760px;
+            color: #667085;
+            font-size: 17px;
+        }
+
+
+        /* ================================
+           NAVIGATION
+        ================================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e8eaed;
+            z-index: 1000;
+        }
+
+        nav {
+            height: 78px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: 5px;
+            color: #172033;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 8px;
+            letter-spacing: 3px;
+            font-weight: normal;
+            margin-top: -3px;
+            color: #8b6b3f;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #344054;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #8b6b3f;
+        }
+
+        .nav-button {
+            background: #172033;
+            color: white !important;
+            padding: 11px 20px;
+            border-radius: 4px;
+        }
+
+        .nav-button:hover {
+            background: #8b6b3f;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+
+        /* ================================
+           HERO
+        ================================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            background:
+                linear-gradient(135deg, #f8f9fb 0%, #ffffff 55%, #f5f1ea 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-small {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            color: #8b6b3f;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 8vw, 100px);
+            line-height: 0.95;
+            letter-spacing: 8px;
+            color: #172033;
+            margin-bottom: 22px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            font-weight: 500;
+            color: #344054;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #667085;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #172033;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #8b6b3f;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #cfd4dc;
+            color: #172033;
+        }
+
+        .btn-outline:hover {
+            border-color: #8b6b3f;
+            color: #8b6b3f;
+        }
+
+        .hero-card {
+            background: #172033;
+            color: white;
+            padding: 55px 45px;
+            border-radius: 8px;
+            box-shadow: 0 25px 60px rgba(23,32,51,0.15);
+        }
+
+        .hero-card .quote-mark {
+            font-size: 70px;
+            line-height: 0.5;
+            opacity: 0.3;
+        }
+
+        .hero-card h3 {
+            font-size: 27px;
+            line-height: 1.35;
+            margin: 25px 0;
+            font-weight: 500;
+        }
+
+        .hero-card p {
+            color: #cbd1da;
+            font-size: 15px;
+        }
+
+
+        /* ================================
+           ABOUT
+        ================================= */
+
+        .about {
+            background: #ffffff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-number {
+            font-size: 120px;
+            font-weight: 800;
+            color: #f0f1f3;
+            line-height: 1;
+        }
+
+        .about-number-text {
+            margin-top: -30px;
+            padding-left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #172033;
+        }
+
+        .about-content p {
+            margin-bottom: 18px;
+            color: #667085;
+            font-size: 16px;
+        }
+
+
+        /* ================================
+           STATS
+        ================================= */
+
+        .stats {
+            background: #f7f8fa;
+            padding: 55px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 38px;
+            color: #172033;
+            margin-bottom: 5px;
+        }
+
+        .stat p {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #667085;
+        }
+
+
+        /* ================================
+           SERVICES
+        ================================= */
+
+        .services {
+            background: #172033;
+            color: white;
+        }
+
+        .services .section-label {
+            color: #b99b70;
+        }
+
+        .services .section-title {
+            color: white;
+        }
+
+        .services .section-text {
+            color: #cbd1da;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            padding: 35px 30px;
+            border: 1px solid #354052;
+            border-radius: 6px;
+            transition: 0.3s;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: #8b6b3f;
+            background: rgba(255,255,255,0.04);
+        }
+
+        .service-number {
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: #b99b70;
+            margin-bottom: 22px;
+        }
+
+        .service-card h3 {
+            font-size: 21px;
+            margin-bottom: 13px;
+        }
+
+        .service-card p {
+            color: #bfc6d1;
+            font-size: 15px;
+        }
+
+
+        /* ================================
+           EXPERTISE
+        ================================= */
+
+        .expertise {
+            background: #f7f8fa;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 45px;
+        }
+
+        .expertise-item {
+            background: white;
+            padding: 25px;
+            border-left: 3px solid #8b6b3f;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+        }
+
+        .expertise-item h3 {
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        .expertise-item p {
+            color: #667085;
+            font-size: 14px;
+        }
+
+
+        /* ================================
+           PRAXIS ADVANTAGE
+        ================================= */
+
+        .advantage {
+            background: white;
+        }
+
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+            margin-top: 45px;
+        }
+
+        .advantage-item {
+            padding: 30px;
+            border-top: 1px solid #dfe2e6;
+        }
+
+        .advantage-item h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+            color: #172033;
+        }
+
+        .advantage-item p {
+            color: #667085;
+        }
+
+
+        /* ================================
+           FOUNDER
+        ================================= */
+
+        .founder {
+            background: #f5f1ea;
+        }
+
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 0.75fr 1.25fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .founder-box {
+            min-height: 400px;
+            background: #172033;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .founder-initials {
+            font-size: 80px;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .founder-content h2 {
+            font-size: 40px;
+            margin-bottom: 5px;
+            color: #172033;
+        }
+
+        .founder-role {
+            color: #8b6b3f;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .founder-content p {
+            color: #667085;
+            margin-bottom: 17px;
+            font-size: 16px;
+        }
+
+
+        /* ================================
+           CLASSROOM TO BOARDROOM
+        ================================= */
+
+        .philosophy {
+            background: #172033;
+            color: white;
+            text-align: center;
+        }
+
+        .philosophy h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .philosophy p {
+            max-width: 750px;
+            margin: auto;
+            color: #cbd1da;
+            font-size: 18px;
+        }
+
+        .philosophy-line {
+            width: 70px;
+            height: 2px;
+            background: #8b6b3f;
+            margin: 30px auto;
+        }
+
+
+        /* ================================
+           CONTACT
+        ================================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            margin-top: 45px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .contact-item h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #8b6b3f;
+            margin-bottom: 5px;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: #344054;
+            font-size: 17px;
+        }
+
+        .contact-box {
+            background: #f7f8fa;
+            padding: 40px;
+            border-radius: 6px;
+        }
+
+        .contact-box h3 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: #667085;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================================
+           FOOTER
+        ================================= */
+
+        footer {
+            background: #111827;
+            color: white;
+            padding: 45px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 35px;
+        }
+
+        .footer-logo {
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .footer-tagline {
+            margin-top: 8px;
+            color: #bfc6d1;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .footer-links a {
+            color: #cbd1da;
+            font-size: 14px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2b3444;
+            padding-top: 20px;
+            color: #8992a2;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        /* ================================
+           RESPONSIVE
+        ================================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                gap: 0;
+                display: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-grid,
+            .about-grid,
+            .founder-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+
+            .hero {
+                padding-top: 130px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 65px 0;
+            }
+
+            .container {
+                width: 88%;
+            }
+
+            .hero h1 {
+                font-size: 60px;
+                letter-spacing: 5px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .services-grid,
+            .expertise-grid,
+            .advantage-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat h3 {
+                font-size: 30px;
+            }
+
+            .founder-content h2 {
+                font-size: 31px;
+            }
+
+            .philosophy h2 {
+                font-size: 32px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-links {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     NAVIGATION
+================================= -->
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a href="#home" class="logo">
+                PRAXIS
+                <span>BUSINESS ADVISORY & CONSULTING</span>
+            </a>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#founder">Founder</a></li>
+                <li><a href="#contact" class="nav-button">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================================
+     HERO
+================================= -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+            <div>
+
+                <div class="hero-small">
+                    Business Advisory & Consulting
+                </div>
+
+                <h1>PRAXIS</h1>
+
+                <h2>Knowledge. Strategy. Growth.</h2>
+
+                <p>
+                    Transforming management knowledge into practical
+                    business solutions for entrepreneurs, organizations
+                    and growing businesses.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#services" class="btn btn-primary">
+                        Explore Our Services
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Let's Talk
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="quote-mark">“</div>
+
+                <h3>
+                    Where Knowledge Meets
+                    Business Practice.
+                </h3>
+
+                <p>
+                    A knowledge-driven approach to business strategy,
+                    entrepreneurship, human resources, research and
+                    management development.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     ABOUT
+================================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div>
+
+                <div class="about-number">20+</div>
+
+                <div class="about-number-text">
+                    Years of Management<br>
+                    Education Experience
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="section-label">
+                    About Praxis
+                </div>
+
+                <h2 class="section-title">
+                    Bridging knowledge<br>
+                    and business practice.
+                </h2>
+
+                <p>
+                    Praxis Business Advisory & Consulting is a
+                    knowledge-driven consulting initiative focused on
+                    helping entrepreneurs, small and medium businesses,
+                    organizations and professionals make informed
+                    managerial and strategic decisions.
+                </p>
+
+                <p>
+                    Built on two decades of experience in management
+                    education, Praxis brings together academic knowledge,
+                    business analysis, strategic thinking and practical
+                    application to address contemporary organizational
+                    challenges.
+                </p>
+
+                <p>
+                    Our approach is simple: understand the business,
+                    identify the challenge, examine the alternatives and
+                    translate knowledge into practical action.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     STATS
+================================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <h3>20+</h3>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="stat">
+                <h3>6+</h3>
+                <p>Consulting Areas</p>
+            </div>
+
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Students Mentored</p>
+            </div>
+
+            <div class="stat">
+                <h3>360°</h3>
+                <p>Management Perspective</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     SERVICES
+================================= -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-label">
+            What We Do
+        </div>
+
+        <h2 class="section-title">
+            Business solutions<br>
+            grounded in knowledge.
+        </h2>
+
+        <p class="section-text">
+            Praxis provides advisory, consulting, research and
+            management development services designed to help
+            businesses and professionals make better decisions.
+        </p>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-number">01</div>
+
+                <h3>Business Strategy</h3>
+
+                <p>
+                    Strategic planning, business analysis, growth
+                    opportunities, competitive positioning and
+                    managerial decision support.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">02</div>
+
+                <h3>Entrepreneurship Advisory</h3>
+
+                <p>
+                    Business ideas, feasibility analysis, business
+                    models, business plans and entrepreneurial
+                    mentoring.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">03</div>
+
+                <h3>HR & Organization</h3>
+
+                <p>
+                    Human resource practices, employee engagement,
+                    performance management and organizational
+                    development.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">04</div>
+
+                <h3>Business Research</h3>
+
+                <p>
+                    Market research, customer analysis, surveys,
+                    business research and interpretation of
+                    management data.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">05</div>
+
+                <h3>Management Training</h3>
+
+                <p>
+                    Leadership, communication, entrepreneurship,
+                    managerial skills and customized management
+                    development programmes.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">06</div>
+
+                <h3>SME Advisory</h3>
+
+                <p>
+                    Business planning, operational improvement,
+                    organizational practices and growth support
+                    for small and medium enterprises.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     EXPERTISE
+================================= -->
+
+<section class="expertise" id="expertise">
+
+    <div class="container">
+
+        <div class="section-label">
+            Areas of Expertise
+        </div>
+
+        <h2 class="section-title">
+            Management expertise<br>
+            with practical perspective.
+        </h2>
+
+        <p class="section-text">
+            Praxis draws upon interdisciplinary management knowledge
+            to understand business problems from multiple perspectives.
+        </p>
+
+
+        <div class="expertise-grid">
+
+
+            <div class="expertise-item">
+
+                <h3>Strategic Management</h3>
+
+                <p>
+                    Strategic analysis, planning, competitive strategy
+                    and organizational direction.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <h3>Entrepreneurship</h3>
+
+                <p>
+                    Entrepreneurial opportunity identification,
+                    business planning and venture development.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <h3>Human Resource Management</h3>
+
+                <p>
+                    People practices, engagement, performance and
+                    organizational effectiveness.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <h3>Organizational Behaviour</h3>
+
+                <p>
+                    Understanding people, teams, leadership and
+                    organizational dynamics.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <h3>Business Research</h3>
+
+                <p>
+                    Research design, data collection, analysis and
+                    evidence-based managerial insights.
+                </p>
+
+            </div>
+
+
+            <div class="expertise-item">
+
+                <h3>Management Development</h3>
+
+                <p>
+                    Building managerial capabilities through structured
+                    training, mentoring and development.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     PRAXIS ADVANTAGE
+================================= -->
+
+<section class="advantage">
+
+    <div class="container">
+
+        <div class="section-label">
+            The Praxis Advantage
+        </div>
+
+        <h2 class="section-title">
+            Experience that connects<br>
+            theory with practice.
+        </h2>
+
+        <div class="advantage-grid">
+
+
+            <div class="advantage-item">
+
+                <h3>20+ Years of Management Education</h3>
+
+                <p>
+                    Extensive experience in management education,
+                    teaching and mentoring across MBA and BBA
+                    programmes.
+                </p>
+
+            </div>
+
+
+            <div class="advantage-item">
+
+                <h3>Academic Foundation</h3>
+
+                <p>
+                    A strong foundation in management concepts,
+                    business research and contemporary management
+                    practices.
+                </p>
+
+            </div>
+
+
+            <div class="advantage-item">
+
+                <h3>Practical Application</h3>
+
+                <p>
+                    A focus on translating management theories and
+                    frameworks into actionable business solutions.
+                </p>
+
+            </div>
+
+
+            <div class="advantage-item">
+
+                <h3>Mentoring Mindset</h3>
+
+                <p>
+                    An advisory approach centred on understanding
+                    problems, evaluating alternatives and enabling
+                    better decisions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     FOUNDER
+================================= -->
+
+<section class="founder" id="founder">
+
+    <div class="container">
+
+        <div class="founder-grid">
+
+
+            <div class="founder-box">
+
+                <div>
+
+                    <div class="founder-initials">
+                        SKK
+                    </div>
+
+                    <p>
+                        Founder
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="founder-content">
+
+                <div class="section-label">
+                    Founder
+                </div>
+
+                <h2>
+                    Sashi Kiran Koppolu
+                </h2>
+
+                <div class="founder-role">
+                    Founder & Management Consultant
+                </div>
+
+                <p>
+                    With over 20 years of experience in management
+                    education, Sashi Kiran Koppolu brings extensive
+                    experience in teaching, mentoring and developing
+                    management capabilities among MBA and BBA students.
+                </p>
+
+                <p>
+                    His areas of professional interest include business
+                    strategy, entrepreneurship, human resource management,
+                    organizational behaviour, business research and
+                    management development.
+                </p>
+
+                <p>
+                    Praxis was founded on the belief that effective
+                    management is not merely about knowing concepts.
+                    It is about applying knowledge to real-world
+                    business situations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     PHILOSOPHY
+================================= -->
+
+<section class="philosophy">
+
+    <div class="container">
+
+        <div class="section-label">
+            Our Philosophy
+        </div>
+
+        <h2>
+            From Classroom to Boardroom
+        </h2>
+
+        <div class="philosophy-line"></div>
+
+        <p>
+            Bringing two decades of management education into
+            practical business advisory — connecting concepts,
+            analysis and experience to help organizations and
+            entrepreneurs move from ideas to action.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     CONTACT
+================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-label">
+            Get in Touch
+        </div>
+
+        <h2 class="section-title">
+            Let's talk about<br>
+            your business.
+        </h2>
+
+        <p class="section-text">
+            Whether you are developing a business idea, growing an
+            organization or looking for management expertise, start
+            the conversation with Praxis.
+        </p>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+
+                    <h3>Founder</h3>
+
+                    <p>
+                        Sashi Kiran Koppolu
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>Email</h3>
+
+                    <!-- Replace with your actual email -->
+
+                    <p>
+                        your-email@example.com
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>Phone</h3>
+
+                    <!-- Replace with your actual phone -->
+
+                    <p>
+                        +91 XXXXX XXXXX
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>Location</h3>
+
+                    <p>
+                        India
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>
+                    Start a Conversation
+                </h3>
+
+                <p>
+                    Tell us about your business, organization or
+                    consulting requirement. We would be pleased to
+                    explore how Praxis can assist you.
+                </p>
+
+                <!-- Replace email address -->
+
+                <a href="mailto:your-email@example.com"
+                   class="btn btn-primary">
+                    Email Praxis
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     FOOTER
+================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-logo">
+                    PRAXIS
+                </div>
+
+                <div class="footer-tagline">
+                    Knowledge. Strategy. Growth.
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#services">Services</a>
+
+                <a href="#founder">Founder</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div>
+                © 2026 PRAXIS Business Advisory & Consulting.
+                All Rights Reserved.
+            </div>
+
+            <div>
+                Founded by Sashi Kiran Koppolu
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================================
+     JAVASCRIPT
+================================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        const navLinks = document.getElementById("navLinks");
+
+        navLinks.classList.toggle("active");
+
+    }
+
+
+    // Close mobile menu after clicking a link
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document.getElementById("navLinks").classList.remove("active");
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+</html>
